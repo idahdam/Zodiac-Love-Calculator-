@@ -32,7 +32,7 @@ void mainMenu()
     printf("\t\t    .| MAIN MENU:                                                                  |.\n");
     printf("\t\t    .| 1. Input nama dan tanggal lahir                                             |.\n");
     printf("\t\t    .|                                                                             |.\n");
-    printf("\t\t    .| 2. Temukan Zodiakmu                                                         |.\n");
+    printf("\t\t    .| 2. Lihat Zodiakmu                                                         |.\n");
     printf("\t\t    .|                                                                             |.\n");
     printf("\t\t    .| 3. Tingkat kecocokan                                                        |.\n");
     printf("\t\t    .|                                                                             |.\n");
@@ -52,7 +52,7 @@ void mainMenu()
             break;
         case 2:
             system("cls");
-            zodiacAssign(x);
+            showZodiac();
             printf("\t\tTekan apa saja untuk kembali ke main menu!");
             getch();
             goto MENU;
@@ -70,7 +70,7 @@ void mainMenu()
             break;
         default:
             printf("\t\t!! ERROR !! INPUT TIDAK SESUAI MENU\n");
-            pritnf("\t\t***********************************\n");
+            printf("\t\t***********************************\n");
             printf("\t\tSilahkan kembali ke main menu, tekan apa saja");
             getch();
             goto MENU;
